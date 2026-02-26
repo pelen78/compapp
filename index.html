@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to HTML - Student Activity</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
     <h1>STUDENT ACTIVITY</h1>
     <h2>Build an Informational Web Page: “Intro to HTML”</h2>
 
-    <h2>GOAL</h2>
+    <h2 class="no-underline">GOAL</h2>
     <p>You will create a real web page in Visual Studio Code that explains what HTML is and how it works.</p>
 
     <p>You will ONLY use:</p>
@@ -99,8 +100,67 @@
     <p>- Open index.html</p>
     <p>- Make edits → refresh → observe changes</p>
 
+    <hr>
 
+    <h1>ACTIVITY 2: Continue Activity 1: Add Basic CSS</h1>
+    <h2>Goal: Keep your same index.html. Create a new styles.css file and add simple text styling.</h2>
 
+    <h3>Step 1 – Create your CSS file</h3>
+    <p>Inside your project folder, create a new file named: styles.css</p>
+
+    <h3>Step 2 – Link your CSS</h3>
+    <p>Open index.html. Inside the &lt;head&gt; section, add this line:</p>
+    <pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+    <p>Save your file and refresh your browser. Nothing will change yet — that is OK.</p>
+
+    <h3>Step 3 – Add basic styling</h3>
+    <p>Open styles.css and copy this code:</p>
+    <pre>
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #111827;
+    line-height: 1.6;
+    padding: 24px;
+}
+h1 {
+    font-size: 34px;
+}
+p {
+    font-size: 16px;
+}
+    </pre>
+    <p>Stop here. Make sure your page looks cleaner and easier to read.</p>
+
+    <hr>
+
+    <h3>Extra Challenge: Individual Heading Colors</h3>
+    <p>If you want each <code>h1</code>, <code>h2</code>, or <code>h3</code> to have a different color, you can use the
+        <code>:nth-of-type</code> selector in your CSS. Copy this example into your <code>styles.css</code> to see it in
+        action:</p>
+
+    <pre>
+h1 {
+    font-size: 34px;
+    color: rgb(184, 0, 0); /* Base color for all h1s */
+    text-align: start;
+}
+
+h1:first-of-type {
+    color: rgb(255, 0, 0);
+}
+
+h1:nth-of-type(2) {
+    color: blue;
+}
+
+h1:nth-of-type(3) {
+    color: green;
+}
+    </pre>
+
+    <p><strong>Note:</strong> You can follow this same pattern for your <code>h2</code> and <code>h3</code> tags to give
+        them unique colors as well!</p>
 
 </body>
 
