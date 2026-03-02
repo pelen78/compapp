@@ -1,32 +1,55 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f5f7fb;
+    background: linear-gradient(135deg, #FFF9D1 0%, #FFE4E6 100%);
+    /* More saturated Golden Pollen and Coral tones */
+    background-size: 400% 400%;
+    /* Enables a smoother appearance */
+    background-attachment: fixed;
+    min-height: 100vh;
     color: #111827;
     line-height: 1.6;
-    padding: 24px;
-
+    padding: 40px;
 }
 
 h1 {
     font-size: 34px;
-    color: rgb(184, 0, 0);
+    color: #FF595E;
+    /* Vibrant Coral */
     text-align: start;
-    text-decoration: underline;
 
 }
 
 h2 {
-    font-size: 34px;
-    color: rgb(184, 0, 0);
+    font-size: 28px;
+    color: #B45309;
+    /* Stronger Amber-700 for better contrast against vibrant background */
     text-align: start;
-
-
 }
 
 
 p {
     font-size: 16px;
-    color: rgb(0, 57, 142);
+    color: #1982C4;
+    /* Steel Blue */
     text-align: start;
 
+}
+
+img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #8AC926;
+    /* Yellow Green */
+    margin: 30px 0;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }

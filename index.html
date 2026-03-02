@@ -11,12 +11,17 @@
 <body>
 
     <h1>INTRO TO HTML</h1>
+    <img src="images/html5_logo.png" alt="HTML5 Shield Logo">
 
-    <h2>What is HTML?</h2>
     <p>The language used to create and structure web pages. It provides the basic building blocks like headings,
         paragraphs, and images, acting as the skeleton of the web page. CSS (Cascading Style Sheets):The language used
         to style and design web pages.
     </p>
+
+    <h2>Why is HTML Important?</h2>
+    <p>Websites need HTML because it tells the browser what each part of the content is (a heading, a paragraph, an
+        image). Without HTML, a website would just be a wall of unorganized text.</p>
+    <img src="images/code_skeleton.png" alt="Illustration of an HTML code skeleton">
 
     <hr>
 
@@ -88,11 +93,13 @@
     <h4>4) Headings in HTML</h4>
     <p>- &lt;h2&gt;</p>
     <p>- 1 paragraph explaining: why headings exist and how they organize information.</p>
+    <img src="images/web_browser_interface.png" alt="A modern web browser interface showing a website layout">
     <p>Then add: &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; (with text explaining what each level could be used for).</p>
 
     <h4>5) Paragraphs in HTML</h4>
     <p>- &lt;h2&gt;</p>
     <p>- 1 paragraph explaining: why paragraphs matter and what happens if everything is one big text block.</p>
+    <img src="images/laptop_web_dev.png" alt="A laptop on a desk showing a responsive web page">
 
 
     <h2>STEP 4 — Open it in a browser</h2>
@@ -137,7 +144,8 @@ p {
     <h3>Extra Challenge: Individual Heading Colors</h3>
     <p>If you want each <code>h1</code>, <code>h2</code>, or <code>h3</code> to have a different color, you can use the
         <code>:nth-of-type</code> selector in your CSS. Copy this example into your <code>styles.css</code> to see it in
-        action:</p>
+        action:
+    </p>
 
     <pre>
 h1 {
@@ -162,6 +170,69 @@ h1:nth-of-type(3) {
     <p><strong>Note:</strong> You can follow this same pattern for your <code>h2</code> and <code>h3</code> tags to give
         them unique colors as well!</p>
 
+    <hr>
+
+    <h1>ACTIVITY 3: Continue editing your index.html</h1>
+    <h2>Goal: Add at least 4 images related to your webpage topic.</h2>
+    <ul>
+        <li>Each image must include an <strong>alt description</strong>.</li>
+        <li>Place images in <strong>different sections</strong> of your webpage (not all together).</li>
+        <li>Make sure your images display correctly in the browser.</li>
+    </ul>
+
+    <p>⚠️ <strong>Requirements:</strong></p>
+    <ul>
+        <li>Images must relate to your webpage topic.</li>
+        <li>Each image must include an alt description.</li>
+        <li>Place images under different sections (not all together).</li>
+    </ul>
+
+    <hr>
+
+    <h1>Part 2 – Style Your Images (CSS)</h1>
+    <p>Open your <strong>styles.css</strong> and add this:</p>
+    <pre>
+img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+    </pre>
+    <p>Save and refresh.</p>
+    <p>👉 <strong>Your images should now:</strong></p>
+    <ul>
+        <li>Be the same width</li>
+        <li>Have rounded corners</li>
+        <li>Have space around them</li>
+    </ul>
+
+    <hr>
+
+    <h1>Part 3 – Add a Divider (hr)</h1>
+    <p>In your HTML, add:</p>
+    <pre>&lt;hr&gt;</pre>
+    <p>Then style it in CSS:</p>
+    <pre>
+hr {
+    border: none;
+    height: 2px;
+    background-color: #e5e7eb;
+    margin: 30px 0;
+}
+    </pre>
+
+    <hr>
+
+    <h1>Challenge </h1>
+    <p>Add this to your CSS:</p>
+
+    x
+    <pre>
+img:hover {
+    transform: scale(1.05);
+}
+    </pre>
+    <p>Tell me what does this do to your page? Answer in the comment section of this assignment in classroom</p>
 </body>
 
 </html>
